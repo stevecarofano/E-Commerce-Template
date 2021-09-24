@@ -123,6 +123,10 @@ p {
     margin-bottom: 30px;
 }
 
+.col-3 p {
+    color: black;
+}
+
 .col-3 img {
     width: 100%;
 }
@@ -201,4 +205,19 @@ h4 {
 .offerImg {
     max-width: 100%;
     padding: 50px;
+}
+
+.testimonial {
+    padding-top: 50px;
+}
+
+.testimonial .col-3 {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.testimonial .col-3 img {
+    width: 75px;
+    margin-top: 20px;
+    border-radius: 50%;
 }
