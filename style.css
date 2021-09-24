@@ -173,8 +173,32 @@ h4 {
 
 .col-4 p {
     font-size: 14px;
+    color: black;
 }
 
 .col-4:hover {
     transform: translateY(-5px);
+}
+
+.col-5 {
+    flex-basis: 50%;
+    min-width: 300px;
+    color: black;
+}
+
+.col-5 p {
+    color: black;
+}
+.col-5 h1 {
+    color: #355e91;
+}
+
+.offer {
+    background: radial-gradient(#fff,black);
+}
+
+
+.offerImg {
+    max-width: 100%;
+    padding: 50px;
 }
