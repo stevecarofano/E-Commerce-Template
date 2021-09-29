@@ -24,6 +24,32 @@ body {
     margin-right: 15px;
 }
 
+.navbar a:after {
+    opacity: 0;
+    content: "";
+    background: var(--secondary);
+    width: 65px;
+    height: 3px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar a:hover:after {
+    opacity: 1;
+    transition: ease 0.5s;
+    content: "";
+    background: var(--secondary);
+    width: 60px;
+    height: 3px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 .cartIcon {
     display: inline-block;
