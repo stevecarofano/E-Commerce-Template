@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --main:rgba(255, 255, 255, 0.829);
+    --secondary: #1d69ab;
+}
+
 html, body {
     height: 100%;
 }
@@ -48,11 +53,11 @@ nav ul li {
 
 a {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.829);
+    color: var(--main);
 }
 
 p {
-    color: rgba(255, 255, 255, 0.829);
+    color: var(--main);
 }
 
 .container {
@@ -68,9 +73,7 @@ p {
     justify-content: space-around;
 }
 
-.col-2 {
-    flex-basis: 50%;
-    min-width: 300px;
+.header-title {
     background-image: url("./assets/images/header-bg1.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%; 
@@ -78,15 +81,20 @@ p {
     width: 100%;
 }
 
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
 .col-2 h1 {
     font-size: 50px;
     line-height: 60px;
     margin: 25px 0;
-    color: white;
+    color: var(--main);
 }
 
 .col-2 p {
-    color: white;
+    color: var(--main);
     font-size: 20px;
 }
 
@@ -99,7 +107,7 @@ p {
 
 .btn {
     display: inline-block;
-    background: #355e91;
+    background: var(--secondary);
     color: #fff;
     padding: 8px 30px;
     margin: 30px 0;
@@ -108,7 +116,7 @@ p {
 }
 
 .btn:hover {
-    background: rgba(255, 255, 255, 0.829);
+    background: var(--main);
     color: black;
     transition: 0.5s;
 }
@@ -160,7 +168,7 @@ p {
 
 .title:after {
     content: "";
-    background: #355e91;
+    background: var(--secondary);
     width: 80px;
     height: 5px;
     border-radius: 5px;
@@ -190,15 +198,18 @@ h4 {
     color: black;
 }
 
-.col-5 p {
-    color: black;
+.col-5 p,
+ .col-5 small {
+    color: var(--main);
 }
 .col-5 h1 {
-    color: #355e91;
+    color: black;
 }
 
 .offer {
-    background: radial-gradient(#fff,black);
+    background-image: url("./assets/images/wickedbackground.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
